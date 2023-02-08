@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #999;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+::-moz-placeholder {
+  color: #aaa;
+}
+
+::placeholder {
+  color: #aaa;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  background: #000000;
+  background-image: url(../assest/bbblurry.svg);
+  background-size: cover;
+  background-position: center;
+}
+
+.wrapper {
+  width: 30%;
+  background-color: #111;
+  padding: 50px 30px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.logo img {
+  width: 100px;
+  border-radius: 50%;
+  outline: 2px solid #555;
+  outline-offset: 5px;
+  margin-bottom: 20px;
+}
+
+.title {
+  flex-direction: column;
+}
+
+.form {
+  margin-top: 40px;
+}
+
+.input-feild {
+  width: 100%;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.input-feild input {
+  width: 100%;
+  color: #fff;
+  font-size: 15px;
+  padding: 15px;
+  border-radius: 6px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  background-color: rgba(68, 68, 68, 0.5333333333);
+}
+
+.bar {
+  width: 100%;
+  align-items: flex-start;
+  padding: 5px;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.bar .range {
+  width: 100%;
+  height: 5px;
+  border-radius: 6px;
+  background-color: #555;
+}
+
+.bar .colorRange {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.bar .colorRange.weak {
+  width: 33.33%;
+  background-color: #bc2b38;
+}
+
+.bar .colorRange.medium {
+  width: 66.66%;
+  background-color: #d36f30;
+}
+
+.bar .colorRange.strong {
+  width: 100%;
+  background-color: #1eb965;
+}
+
+.bar span {
+  font-size: 14px;
+}
+
+.btn {
+  width: 100%;
+}
+
+.btn button {
+  width: 100%;
+  height: 50px;
+  border: 0;
+  outline: 0;
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 6px;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+}
+
+.btn button:hover {
+  background-color: #ccc;
+}
+
+@media (max-width: 1080px) and (min-width: 990px) {
+  .wrapper {
+    width: 40%;
+  }
+}
+
+@media (max-width: 990px) {
+  .wrapper {
+    width: 50%;
+  }
+}
+
+@media (max-width: 540px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  span {
+    font-size: 12px;
+  }
+
+  .wrapper {
+    width: 70%;
+    padding-inline: 20px;
+    padding-block: 30px;
+  }
+
+  button {
+    height: 25px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
